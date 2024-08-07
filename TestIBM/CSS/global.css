@@ -2,21 +2,25 @@
     box-sizing: border-box;
 }
 
-/*AJUSTANDO "LEIS-TOTAIS"  DO CORPO DO SITE*/
+/* AJUSTANDO "LEIS-TOTAIS" DO CORPO DO SITE */
 body {
     background: linear-gradient(to bottom, #95b19c, #F5F5F5, #F3C3B2);
-    min-height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    min-height: 100vh;
+    /* Garante que o fundo ocupe toda a altura da tela */
     margin: 0;
     font-family: "Josefin Sans", sans-serif;
     color: #1D1E1D;
 }
 
-/*AJUSTANDO "LEIS-TOTAIS"  DA NAVBAR*/
-.Navbar, .Navbar2, .Navbar {
+/* AJUSTANDO "LEIS-TOTAIS" DA NAVBAR */
+.Navbar,
+.Navbar2,
+.Navbar {
     background-color: #95b19c;
     height: 60px;
     display: flex;
     margin: 0;
+    position: relative;
 }
 
 .Navbar2 {
@@ -29,48 +33,55 @@ body {
 }
 
 @media(max-width: 950px) {
-    .NavbarItems, .Navbar2{
+
+    .NavbarItems,
+    .Navbar2 {
         flex-direction: column;
         margin-right: 0;
     }
-    .NavbarItems{
+
+    .NavbarItems {
         display: none;
     }
-    .NavbarItems--direita{
+
+    .NavbarItems--direita {
         margin-left: 0;
     }
-    .Search{
+
+    .Search {
         display: none;
     }
-    .Navbar__ToggleShow{
+
+    .Navbar__ToggleShow {
         display: flex;
     }
 }
 
-/*AJUSTANDO "LEIS"  DA LOGO DO SITE NA NAVBAR*/
-.NavbarImage img{
+/* AJUSTANDO "LEIS" DA LOGO DO SITE NA NAVBAR */
+.NavbarImage img {
     margin: 0 50px 0 10px;
     height: 60px;
 }
 
 
-/*AJUSTANDO "LEIS-TOTAIS"  DOS NAV-ITENS*/
+/* AJUSTANDO "LEIS-TOTAIS" DOS NAV-ITENS */
 .NavbarItems {
-    display:flex;
+    display: flex;
 }
 
 .NavbarItems--direita {
     margin-left: auto
 }
 
-/*AJUSTANDO "LEIS-TOTAIS"  DOS NAV-LINKS*/
-.NavbarLink a{
+/* AJUSTANDO "LEIS-TOTAIS" DOS NAV-LINKS */
+.NavbarLink a {
     padding-right: 8px;
     text-decoration: none;
     color: #1D1E1D;
 }
 
-.NavbarLink, .Search{
+.NavbarLink,
+.Search {
     width: auto;
     height: 60px;
     align-content: center;
@@ -78,35 +89,70 @@ body {
     margin: 18px;
 }
 
-.NavbarLink a:hover { /*animação da cor preta para branca dos links*/
+.NavbarLink a:hover {
+    /* animação da cor preta para branca dos links */
     color: #FFF2F2;
 }
 
-input{
+input {
     width: 300px;
     height: 28px;
     border-radius: 5px;
     border: none;
 }
 
-/*AJUSTANDO "LEIS-TOTAIS"  DOS NAV-ICONS*/
+/* AJUSTANDO "LEIS-TOTAIS" DOS NAV-ICONS */
 .icone {
-    color:#1D1E1D;
+    color: #1D1E1D;
     font-size: 22px;
 }
 
 .icone:hover {
-    color:#FFF2F2;
+    color: #FFF2F2;
 }
 
-.icos{
-    margin:5px;
+.icos {
+    margin: 5px;
     float: left;
 }
 
 /* Carousel */
 .carousel {
-    position: relative; /* Set position to relative */
-    margin-top: 60px; /* Add margin-top to match navbar height */
-  }
-  
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: auto;
+    height: auto;
+}
+
+
+
+/* LIVROS */
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.book {
+    padding: 10px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+
+.book p {
+    font-size: 0.9em;
+    color: #666;
+}
